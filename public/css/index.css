@@ -1,3 +1,7 @@
+body {
+  background-image: url("../assets/fantasy.jpg"); /* http://fantasyartdesign.com */
+}
+
 .app {
   margin-top: 50px;
   margin-bottom: 50px;
