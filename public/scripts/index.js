@@ -135,6 +135,14 @@ class DeleteNameButton extends React.Component {
   }
 }
 
+class ClearAllButton extends React.Component {
+  render() {
+    return (
+      <button type="button" onClick={this.props.clearAll}>Clear All</button>
+    );
+  }
+}
+
 
 ReactDOM.render(
   <App />,
