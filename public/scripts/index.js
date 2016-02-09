@@ -110,8 +110,9 @@ class GeneratorButtonBox extends React.Component {
 class SavedList extends React.Component {
   render() {
     var names = this.props.savedNames.length === 0 ? <p className="noSavedNames">No saved names yet!</p> : this.props.savedNames.map(function(name, index){
+      var onDelete = this.props.onDelete.bind(null, index);
       return (
-        <SavedName key={index} name={name} index={index} onDelete={this.props.onDelete} />
+        <SavedName key={index} name={name} index={index} onDelete={onDelete} />
       );
     }.bind(this))
     return (
