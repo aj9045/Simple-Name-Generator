@@ -97,7 +97,7 @@ class SavedList extends React.Component {
   render() {
     var names = this.props.savedNames.map(function(name, index){
       return (
-        <SavedName key={index} name={name} index={index} />
+        <SavedName key={index} name={name} index={index} onDelete={this.props.onDelete}/>
       );
     }.bind(this))
     return (
