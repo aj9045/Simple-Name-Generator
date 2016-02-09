@@ -63,7 +63,7 @@ class GeneratorBox extends React.Component {
 class Name extends React.Component {
   render() {
     return (
-      <p>A name goes here</p>
+      <p>{this.props.fullName}</p>
     );
   }
 }
