@@ -87,8 +87,11 @@ class GeneratorBox extends React.Component {
 
 class Name extends React.Component {
   render() {
+    var nameDisplay = this.props.fullName === "" ? <p className="noName">Click "generate" to conjure up a name</p> : <p className="name">{this.props.fullName}</p>
     return (
-      <p className="name">{this.props.fullName}</p>
+      <div>
+        {nameDisplay}
+      </div>
     );
   }
 }
