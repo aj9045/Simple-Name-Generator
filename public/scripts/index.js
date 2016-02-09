@@ -41,10 +41,7 @@ class App extends React.Component {
 
   saveName() {
     var name = this.state.fullName;
-    if (/generate/.test(name)) {
-      return false;
-    }
-    else {
+    if (name !== "") {
       var savedNames = this.state.savedNames;
       savedNames.push(name);
       this.setState({savedNames: savedNames});
