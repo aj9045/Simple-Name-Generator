@@ -74,7 +74,7 @@ class GeneratorButtonBox extends React.Component {
     return (
       <div>
         <button type="button" onClick={this.props.generateFullName}>Generate</button>
-        <button type="button">Save</button>
+        <button type="button" onClick={this.props.saveName}>Save</button>
       </div>
     );
   }
