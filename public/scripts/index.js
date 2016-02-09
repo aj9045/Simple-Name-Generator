@@ -5,7 +5,7 @@ class App extends React.Component {
       firstArray: [],
       lastArray: [],
       savedNames: [],
-      fullName: "Click the 'generate' button to conjure a name",
+      fullName: "",
     };
   }
 
