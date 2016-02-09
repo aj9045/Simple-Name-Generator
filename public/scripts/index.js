@@ -57,7 +57,7 @@ class App extends React.Component {
       <div>
         <h1>Name Generator</h1>
         <GeneratorBox generateFullName={this.generateFullName.bind(this)} fullName={this.state.fullName} saveName={this.saveName.bind(this)} />
-        <SavedList  />
+        <SavedList savedNames={this.state.savedNames} />
       </div>
     );
   }
