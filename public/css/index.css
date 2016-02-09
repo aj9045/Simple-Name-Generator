@@ -144,3 +144,28 @@ ol li {
   position: relative;
   top: 1px;
 }
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: text-bottom;
+}
+
+.deleteButton>img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+}
+
+.deleteButton:focus {
+  outline: none;
+}
+
+.deleteButton:active {
+  background-color: lightgrey;
+}
