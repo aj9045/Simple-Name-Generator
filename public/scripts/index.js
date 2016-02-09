@@ -119,6 +119,13 @@ class SavedName extends React.Component {
   }
 }
 
+class DeleteNameButton extends React.Component {
+  render() {
+    return (
+      <button type="button" value={this.props.index} onClick={this.props.onDelete}>delete</button>
+    );
+  }
+}
 
 
 ReactDOM.render(
