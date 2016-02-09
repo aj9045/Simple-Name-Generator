@@ -33,7 +33,8 @@ class GeneratorBox extends React.Component {
   render() {
     return (
       <div>
-        Generator Box
+        <Name />
+        <GeneratorButtonBox />
       </div>
     );
   }
