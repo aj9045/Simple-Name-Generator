@@ -110,6 +110,7 @@ class SavedList extends React.Component {
     return (
       <div>
         <h2>Saved Names</h2>
+        <ClearAllButton clearAll={this.props.clearAll} />
         <ol>
           {names}
         </ol>
