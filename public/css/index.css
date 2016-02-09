@@ -21,17 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
 }
 
-.savedList {
-  border: 3px solid green;
-  width: 75%;
-  margin: 10px auto;
-  padding: 20px;
-}
-
-.savedList>h2 {
-  clear: both;
-}
-
 p {
   text-align: center;
   margin-top: 20px;
@@ -39,16 +28,23 @@ p {
   margin-left: auto;
   margin-bottom: 15px;
   width: 75%;
+  font-family: "Noto Sans", sans-serif;
 }
+
+/* -- GeneratorBox component -- */
 
 .name {
+  height: 2em;
   font-size: 2em;
-  font-family: "Noto Sans", sans-serif;
 }
 
-.savedList>p {
-  font-size: .5em;
-  font-family: "Noto Sans", sans-serif;
+.noName {
+  height: 4em;
+  font-size: 1em;
+}
+
+.noSavedNames {
+  font-size: 1em;
 }
 
 .buttonBox {
@@ -58,10 +54,6 @@ p {
 
 .saveButton {
   float: right;
-}
-
-ol li {
-  padding-top: 10px;
 }
 
 .generateButton, .saveButton {
@@ -110,6 +102,19 @@ ol li {
   outline: none;
 }
 
+/* -- SavedList component --*/
+
+.savedList {
+  border: 3px solid green;
+  width: 75%;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.savedList>h2 {
+  clear: both;
+}
+
 .clearButton {
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -155,12 +160,25 @@ ol li {
   top: 1px;
 }
 
+.savedList>p {
+  font-size: .5em;
+}
+
+.savedName>span, li {
+  font-size: 1.1em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+ol li {
+  padding-top: 10px;
+}
+
 .deleteButton {
   background: transparent;
   border: none;
   margin: 0;
   padding: 0;
-  vertical-align: text-bottom;
+  vertical-align: middle;
 }
 
 .deleteButton>img {
