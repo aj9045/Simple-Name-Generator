@@ -153,7 +153,7 @@ class SavedName extends React.Component {
 class DeleteNameButton extends React.Component {
   render() {
     return (
-      <button type="button" value={this.props.index} onClick={this.props.onDelete} className="deleteButton button"><img src="../assets/deleteButton.png" className="deleteImage" /></button>
+      <button type="button" value={this.props.index} onClick={this.props.onDelete} className="deleteButton button"><img src="../assets/deleteButton.png" className="deleteImage" value={this.props.index} /></button>
     );
   }
 }
