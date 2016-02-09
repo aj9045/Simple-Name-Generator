@@ -34,7 +34,7 @@ class GeneratorBox extends React.Component {
     return (
       <div>
         <Name />
-        <GeneratorButtonBox />
+        <GeneratorButtonBox generateFullName={this.props.generateFullName}/>
       </div>
     );
   }
@@ -52,7 +52,7 @@ class GeneratorButtonBox extends React.Component {
   render() {
     return (
       <div>
-        <button type="button">Generate</button>
+        <button type="button" onClick={this.props.generateFullName}>Generate</button>
         <button type="button">Save</button>
       </div>
     );
