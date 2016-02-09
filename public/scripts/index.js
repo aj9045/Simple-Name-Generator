@@ -28,6 +28,16 @@ class GeneratorBox extends React.Component {
   }
 }
 
+class SavedList extends React.Component {
+  render() {
+    return (
+      <div>
+        Saved List
+      </div>
+    );
+  }
+}
+
 
 
 ReactDOM.render(
