@@ -10,7 +10,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .app>h1 {
@@ -38,7 +38,17 @@ p {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 15px;
-  width: 50%;
+  width: 75%;
+}
+
+.name {
+  font-size: 2em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.savedList>p {
+  font-size: .5em;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .buttonBox {
