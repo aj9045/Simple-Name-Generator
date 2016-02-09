@@ -5,3 +5,6 @@ npm install
 then
 
 node server.js
+
+
+Why?  Because stories always need characters.
