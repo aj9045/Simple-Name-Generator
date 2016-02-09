@@ -95,6 +95,11 @@ class GeneratorButtonBox extends React.Component {
 
 class SavedList extends React.Component {
   render() {
+    var names = this.props.savedNames.map(function(name, index){
+      return (
+        <SavedName key={index} name={name} index={index} />
+      );
+    }.bind(this))
     return (
       <div>
         Saved List
