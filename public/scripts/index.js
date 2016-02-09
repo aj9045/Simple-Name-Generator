@@ -40,6 +40,25 @@ class GeneratorBox extends React.Component {
   }
 }
 
+class Name extends React.Component {
+  render() {
+    return (
+      <p>A name goes here</p>
+    );
+  }
+}
+
+class GeneratorButtonBox extends React.Component {
+  render() {
+    return (
+      <div>
+        <button type="button">Generate</button>
+        <button type="button">Save</button>
+      </div>
+    );
+  }
+}
+
 class SavedList extends React.Component {
   render() {
     return (
