@@ -113,7 +113,7 @@ p {
 /* -- SavedList component --*/
 
 .savedList {
-  border: 3px solid green;
+  border: 3px solid #24b58e;
   width: 75%;
   margin: 10px auto;
   padding: 20px;
