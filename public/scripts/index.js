@@ -65,7 +65,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <h1>Name Generator</h1>
         <GeneratorBox generateFullName={this.generateFullName.bind(this)} fullName={this.state.fullName} saveName={this.saveName.bind(this)} />
         <SavedList savedNames={this.state.savedNames} onDelete={this.onDelete.bind(this)} clearAll={this.clearAll.bind(this)} />
@@ -77,7 +77,7 @@ class App extends React.Component {
 class GeneratorBox extends React.Component {
   render() {
     return (
-      <div>
+      <div className="generatorBox">
         <Name fullName={this.props.fullName} />
         <GeneratorButtonBox generateFullName={this.props.generateFullName} saveName={this.props.saveName} />
       </div>
@@ -88,7 +88,7 @@ class GeneratorBox extends React.Component {
 class Name extends React.Component {
   render() {
     return (
-      <p>{this.props.fullName}</p>
+      <p className="name">{this.props.fullName}</p>
     );
   }
 }
@@ -96,9 +96,9 @@ class Name extends React.Component {
 class GeneratorButtonBox extends React.Component {
   render() {
     return (
-      <div>
-        <button type="button" onClick={this.props.generateFullName}>Generate</button>
-        <button type="button" onClick={this.props.saveName}>Save</button>
+      <div className="buttonBox">
+        <button type="button" onClick={this.props.generateFullName} className="generateButton button">Generate</button>
+        <button type="button" onClick={this.props.saveName} className="saveButton button">Save</button>
       </div>
     );
   }
@@ -112,7 +112,7 @@ class SavedList extends React.Component {
       );
     }.bind(this))
     return (
-      <div>
+      <div className="savedList">
         <h2>Saved Names</h2>
         <ClearAllButton clearAll={this.props.clearAll} />
         <ol>
@@ -126,7 +126,7 @@ class SavedList extends React.Component {
 class SavedName extends React.Component {
   render() {
     return (
-       <li>{this.props.name} <DeleteNameButton index={this.props.index} onDelete={this.props.onDelete} /></li>
+       <li className="savedName">{this.props.name} <DeleteNameButton index={this.props.index} onDelete={this.props.onDelete} /></li>
     );
   }
 }
@@ -134,7 +134,7 @@ class SavedName extends React.Component {
 class DeleteNameButton extends React.Component {
   render() {
     return (
-      <button type="button" value={this.props.index} onClick={this.props.onDelete}>delete</button>
+      <button type="button" value={this.props.index} onClick={this.props.onDelete} className="deleteButton button">delete</button>
     );
   }
 }
@@ -142,7 +142,7 @@ class DeleteNameButton extends React.Component {
 class ClearAllButton extends React.Component {
   render() {
     return (
-      <button type="button" onClick={this.props.clearAll}>Clear All</button>
+      <button type="button" onClick={this.props.clearAll} className="clearButton button">Clear All</button>
     );
   }
 }
