@@ -127,9 +127,26 @@ class SavedList extends React.Component {
 }
 
 class SavedName extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hover: false,
+    };
+  }
+
+  showDeleteButton() {
+    this.setState({hover: !this.state.hover});
+  }
+
   render() {
+    if (this.state.hover) {
+      var deleteButton = <DeleteNameButton index={this.props.index} onDelete={this.props.onDelete} />
+    }
+    else {
+      var deleteButton;
+    }
     return (
-       <li className="savedName">{this.props.name} <DeleteNameButton index={this.props.index} onDelete={this.props.onDelete} /></li>
+       <li className="savedName"><span onMouseEnter={this.showDeleteButton.bind(this)} onMouseLeave={this.showDeleteButton.bind(this)}>{this.props.name} {deleteButton}</span></li>
     );
   }
 }
