@@ -52,8 +52,7 @@ class App extends React.Component {
     this.generateFullName();
   }
 
-  onDelete(event) {
-    var index = event.target.value;
+  onDelete(index) {
     var savedNames = this.state.savedNames;
     savedNames.splice(index, 1);
     this.setState({savedNames: savedNames});
