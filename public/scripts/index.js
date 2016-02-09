@@ -111,6 +111,14 @@ class SavedList extends React.Component {
   }
 }
 
+class SavedName extends React.Component {
+  render() {
+    return (
+       <li>{this.props.name}</li>
+    );
+  }
+}
+
 
 
 ReactDOM.render(
