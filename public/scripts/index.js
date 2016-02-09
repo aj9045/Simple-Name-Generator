@@ -23,6 +23,18 @@ class App extends React.Component {
     var last = this.generateLast();
   }
 
+   generateFirst() {
+    var firstNames = this.state.firstArray;
+    var index = Math.floor(Math.random() * (firstNames.length - 1)) + 1;
+    return firstNames[index];
+  }
+
+  generateLast() {
+    var lastNames = this.state.lastArray;
+    var index = Math.floor(Math.random() * (lastNames.length - 1)) + 1;
+    return lastNames[index];
+  }
+
   render() {
     return (
       <div>
