@@ -22,6 +22,8 @@ class App extends React.Component {
   generateFullName() {
     var first = this.generateFirst();
     var last = this.generateLast();
+    var fullName = first +  " " + last;
+    this.setState({fullName: fullName});
   }
 
    generateFirst() {
