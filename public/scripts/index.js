@@ -102,7 +102,10 @@ class SavedList extends React.Component {
     }.bind(this))
     return (
       <div>
-        Saved List
+        <h2>Saved Names</h2>
+        <ol>
+          {names}
+        </ol>
       </div>
     );
   }
