@@ -4,6 +4,7 @@ class App extends React.Component {
     this.state = {
       firstArray: [],
       lastArray: [],
+      fullName: "Click the 'generate' button to conjure a name",
     };
   }
 
