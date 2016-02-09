@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Name Generator</h1>
-        <GeneratorBox />
+        <GeneratorBox generateFullName={this.generateFullName.bind(this)}/>
         <SavedList  />
       </div>
     );
