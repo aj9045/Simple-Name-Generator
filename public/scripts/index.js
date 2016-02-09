@@ -18,6 +18,11 @@ class App extends React.Component {
     }.bind(this));
   }
 
+  generateFullName() {
+    var first = this.generateFirst();
+    var last = this.generateLast();
+  }
+
   render() {
     return (
       <div>
