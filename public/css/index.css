@@ -112,6 +112,7 @@ p {
 }
 
 .savedList>h2 {
+  display: inline-block;
   clear: both;
 }
 
