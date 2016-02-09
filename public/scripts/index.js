@@ -59,6 +59,10 @@ class App extends React.Component {
     this.setState({savedNames: savedNames});
   }
 
+  clearAll() {
+    this.setState({savedNames: []});
+  }
+
   render() {
     return (
       <div>
