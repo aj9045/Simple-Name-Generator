@@ -64,7 +64,7 @@ class App extends React.Component {
       <div>
         <h1>Name Generator</h1>
         <GeneratorBox generateFullName={this.generateFullName.bind(this)} fullName={this.state.fullName} saveName={this.saveName.bind(this)} />
-        <SavedList savedNames={this.state.savedNames} onDelete={this.onDelete.bind(this)} />
+        <SavedList savedNames={this.state.savedNames} onDelete={this.onDelete.bind(this)} clearAll={this.clearAll.bind(this)} />
       </div>
     );
   }
