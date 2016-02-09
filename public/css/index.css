@@ -117,6 +117,7 @@ p {
 
 .savedList {
   border: 3px solid #24b58e;
+  border-style: inset;
   width: 75%;
   margin: 10px auto;
   padding: 20px;
