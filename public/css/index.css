@@ -175,6 +175,7 @@ p {
 }
 
 .savedName>span, li {
+  cursor: default;
   font-size: 1.1em;
   font-family: "Noto Sans", sans-serif;
 }
