@@ -116,8 +116,7 @@ class SavedList extends React.Component {
     }.bind(this))
     return (
       <div className="savedList">
-        <h2>Saved Names</h2>
-        <ClearAllButton clearAll={this.props.clearAll} />
+        <h2>Saved Names <ClearAllButton clearAll={this.props.clearAll} /></h2>
         <ol>
           {names}
         </ol>
