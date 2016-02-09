@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
 }
 
+.savedList {
+  border: 3px solid green;
+  width: 75%;
+  margin: 10px auto;
+  padding: 20px;
+}
+
 .savedList>h2 {
   clear: both;
 }
