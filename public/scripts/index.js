@@ -7,6 +7,17 @@ class App extends React.Component {
     };
   }
 
+  componentWillMount() {
+    this.serverRequest = $.get("../first_names.csv", function (result) {
+      var first = result.split(",");
+      this.setState({firstArray: first});
+    }.bind(this));
+    this.serverRequest = $.get("../last_names.csv", function (result) {
+      var last = result.split(",");
+      this.setState({lastArray: last});
+    }.bind(this));
+  }
+
   render() {
     return (
       <div>
