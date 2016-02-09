@@ -9,8 +9,10 @@ body {
   margin-left: auto;
   width: 65%;
   min-width: 450px;
-  border: 3px solid #3c7a7a;
+  border: 3px solid #24b58e;
+  border-style: outset;
   padding: 40px;
+  background-color: rgba(226, 255, 252, 0.75);
 }
 
 h1, h2, h3, h4, h5, h6 {
