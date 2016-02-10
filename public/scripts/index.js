@@ -110,7 +110,7 @@ class Name extends React.Component {
     else {
       var nameDisplay = (
         <p className="fullName">
-          <span className="firstName" onClick={this.props.holdFirst}>{this.props.firstName}</span> <span className="lastName" onClick={this.props.holdLast}>{this.props.lastName}</span>
+          <span className={this.isActive("first")} onClick={this.props.holdFirst}>{this.props.firstName}</span> <span className={this.isActive("last")} onClick={this.props.holdLast}>{this.props.lastName}</span>
         </p>
       );
     }
