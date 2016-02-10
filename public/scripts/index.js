@@ -6,6 +6,8 @@ class App extends React.Component {
       lastArray: [],
       savedNames: [],
       fullName: "",
+      firstName: "",
+      lastName: "",
     };
   }
 
