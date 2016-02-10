@@ -84,7 +84,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <h1>Name Generator</h1>
-        <GeneratorBox generateFullName={this.generateFullName.bind(this)} firstName={this.state.firstName} lastName={this.state.lastName} saveName={this.saveName.bind(this)} holdFirst={this.holdFirst.bind(this)} holdLast={this.holdLast.bind(this)} />
+        <GeneratorBox generateFullName={this.generateFullName.bind(this)} firstName={this.state.firstName} lastName={this.state.lastName} saveName={this.saveName.bind(this)} holdFirst={this.holdFirst.bind(this)} holdLast={this.holdLast.bind(this)} holdingFirst={this.state.holdFirst}  holdingLast={this.state.holdLast} />
         <SavedList savedNames={this.state.savedNames} onDelete={this.onDelete.bind(this)} clearAll={this.clearAll.bind(this)} />
       </div>
     );
@@ -95,7 +95,7 @@ class GeneratorBox extends React.Component {
   render() {
     return (
       <div className="generatorBox">
-        <Name firstName={this.props.firstName} lastName={this.props.lastName} holdFirst={this.props.holdFirst} holdLast={this.props.holdLast} />
+        <Name firstName={this.props.firstName} lastName={this.props.lastName} holdFirst={this.props.holdFirst} holdLast={this.props.holdLast} holdingFirst={this.props.holdingFirst} holdingLast={this.props.holdingLast} />
         <GeneratorButtonBox generateFullName={this.props.generateFullName} saveName={this.props.saveName} />
       </div>
     );
