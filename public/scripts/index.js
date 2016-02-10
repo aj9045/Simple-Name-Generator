@@ -103,6 +103,17 @@ class GeneratorBox extends React.Component {
 }
 
 class Name extends React.Component {
+  isActive(type) {
+    switch(type) {
+      case "first":
+        return this.props.holdingFirst ? "firstName onHold" : "firstName";
+        break;
+      case "last":
+        return this.props.holdingLast ? "lastName onHold" : "lastName";
+        break;
+    }
+  }
+
   render() {
     if (this.props.firstName === "" || this.props.lastName === "") {
       var nameDisplay = <p className="noName">Click "generate" to conjure up a name</p>;
