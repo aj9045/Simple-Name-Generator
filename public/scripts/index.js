@@ -7,6 +7,8 @@ class App extends React.Component {
       savedNames: [],
       firstName: "",
       lastName: "",
+      holdFirst: false,
+      holdLast: false,
     };
   }
 
