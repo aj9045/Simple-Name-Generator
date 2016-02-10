@@ -49,6 +49,10 @@ p {
   font-size: 2em;
 }
 
+.firstName, .lastName {
+  cursor: pointer;
+}
+
 .noName {
   height: 4em;
   font-size: 1em;
