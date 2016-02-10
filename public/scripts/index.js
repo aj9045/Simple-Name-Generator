@@ -5,7 +5,6 @@ class App extends React.Component {
       firstArray: [],
       lastArray: [],
       savedNames: [],
-      fullName: "",
       firstName: "",
       lastName: "",
     };
@@ -25,9 +24,7 @@ class App extends React.Component {
   generateFullName() {
     var first = this.generateFirst();
     var last = this.generateLast();
-    var fullName = first +  " " + last;
     this.setState({
-      fullName: fullName,
       firstName: first,
       lastName: last,
     });
@@ -46,7 +43,7 @@ class App extends React.Component {
   }
 
   saveName() {
-    var name = this.state.fullName;
+    var name = this.state.firstName + " " + this.state.lastName;
     if (name !== "") {
       var savedNames = this.state.savedNames;
       savedNames.push(name);
@@ -77,7 +74,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <h1>Name Generator</h1>
-        <GeneratorBox generateFullName={this.generateFullName.bind(this)} fullName={this.state.fullName} firstName={this.state.firstName} lastName={this.state.lastName} saveName={this.saveName.bind(this)} holdFirst={this.holdFirst.bind(this)} holdLast={this.holdLast.bind(this)} />
+        <GeneratorBox generateFullName={this.generateFullName.bind(this)} firstName={this.state.firstName} lastName={this.state.lastName} saveName={this.saveName.bind(this)} holdFirst={this.holdFirst.bind(this)} holdLast={this.holdLast.bind(this)} />
         <SavedList savedNames={this.state.savedNames} onDelete={this.onDelete.bind(this)} clearAll={this.clearAll.bind(this)} />
       </div>
     );
@@ -88,7 +85,7 @@ class GeneratorBox extends React.Component {
   render() {
     return (
       <div className="generatorBox">
-        <Name fullName={this.props.fullName} firstName={this.props.firstName} lastName={this.props.lastName} holdFirst={this.props.holdFirst} holdLast={this.props.holdLast} />
+        <Name firstName={this.props.firstName} lastName={this.props.lastName} holdFirst={this.props.holdFirst} holdLast={this.props.holdLast} />
         <GeneratorButtonBox generateFullName={this.props.generateFullName} saveName={this.props.saveName} />
       </div>
     );
