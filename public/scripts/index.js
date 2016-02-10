@@ -94,8 +94,8 @@ class Name extends React.Component {
     }
     else {
       var nameDisplay = (
-        <p className="name">
-          <span>{this.props.firstName}</span> <span>{this.props.lastName}</span>
+        <p className="fullName">
+          <span className="firstName">{this.props.firstName}</span> <span className="lastName">{this.props.lastName}</span>
         </p>
       );
     }
