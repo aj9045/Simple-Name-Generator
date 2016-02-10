@@ -26,10 +26,18 @@ class App extends React.Component {
   generateFullName() {
     var first = this.generateFirst();
     var last = this.generateLast();
-    this.setState({
-      firstName: first,
-      lastName: last,
-    });
+    if (this.state.holdFirst) {
+      this.setState({lastName: last});
+    }
+    else if (this.state.holdLast) {
+      this.setState({firstName: first});
+    }
+    else {
+      this.setState({
+        firstName: first,
+        lastName: last,
+      });
+    }
   }
 
    generateFirst() {
