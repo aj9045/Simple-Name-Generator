@@ -65,11 +65,11 @@ class App extends React.Component {
   }
 
   holdFirst() {
-    console.log("holdFirst");
+    this.setState({holdFirst: !this.state.holdFirst});
   }
 
   holdLast() {
-    console.log("holdLast");
+    this.setState({holdLast: !this.state.holdLast});
   }
 
   render() {
