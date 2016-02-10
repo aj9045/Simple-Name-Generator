@@ -53,6 +53,10 @@ p {
   cursor: pointer;
 }
 
+.onHold {
+  text-shadow: 3px 3px 4px rgba(97, 131, 134, 1);
+}
+
 .noName {
   height: 4em;
   font-size: 1em;
