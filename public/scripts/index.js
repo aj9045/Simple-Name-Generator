@@ -65,11 +65,15 @@ class App extends React.Component {
     this.setState({savedNames: []});
   }
 
+  holdFirst() {
+    console.log("holdFirst");
+  }
+
   render() {
     return (
       <div className="app">
         <h1>Name Generator</h1>
-        <GeneratorBox generateFullName={this.generateFullName.bind(this)} fullName={this.state.fullName} firstName={this.state.firstName} lastName={this.state.lastName} saveName={this.saveName.bind(this)} />
+        <GeneratorBox generateFullName={this.generateFullName.bind(this)} fullName={this.state.fullName} firstName={this.state.firstName} lastName={this.state.lastName} saveName={this.saveName.bind(this)} holdFirst={this.holdFirst.bind(this)} />
         <SavedList savedNames={this.state.savedNames} onDelete={this.onDelete.bind(this)} clearAll={this.clearAll.bind(this)} />
       </div>
     );
@@ -80,7 +84,7 @@ class GeneratorBox extends React.Component {
   render() {
     return (
       <div className="generatorBox">
-        <Name fullName={this.props.fullName} firstName={this.props.firstName} lastName={this.props.lastName} />
+        <Name fullName={this.props.fullName} firstName={this.props.firstName} lastName={this.props.lastName} holdFirst={this.props.holdFirst} />
         <GeneratorButtonBox generateFullName={this.props.generateFullName} saveName={this.props.saveName} />
       </div>
     );
@@ -95,7 +99,7 @@ class Name extends React.Component {
     else {
       var nameDisplay = (
         <p className="fullName">
-          <span className="firstName">{this.props.firstName}</span> <span className="lastName">{this.props.lastName}</span>
+          <span className="firstName" onClick={this.props.holdFirst}>{this.props.firstName}</span> <span className="lastName">{this.props.lastName}</span>
         </p>
       );
     }
