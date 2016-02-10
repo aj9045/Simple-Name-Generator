@@ -73,11 +73,16 @@ class App extends React.Component {
   }
 
   holdFirst() {
-    this.setState({holdFirst: !this.state.holdFirst});
+    if (!this.state.holdLast) {
+      this.setState({holdFirst: !this.state.holdFirst});
+    }
   }
 
   holdLast() {
-    this.setState({holdLast: !this.state.holdLast});
+    if (!this.state.holdFirst) {
+      this.setState({holdLast: !this.state.holdLast});
+    }
+
   }
 
   render() {
