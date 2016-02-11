@@ -24,3 +24,10 @@ Feel free to use the names I've complied, add to the list, or replace it with yo
 
 
 [https://simple-name-gen.herokuapp.com/](https://simple-name-gen.herokuapp.com/)
+
+
+2/11/16
+
+I went on a last name adding spree, so now there are many more last names than first names.  I'll hopefully be updating the first name list soon.
+
+I also want to point out that there are both masculine and feminine first names in the first name mix.  You've probably figured that out by now. It shall stay that way on my end.  No need to split them up.
