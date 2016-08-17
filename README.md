@@ -23,7 +23,7 @@ Feel free to use the names I've complied, add to the list, or replace it with yo
 - While generating names, if you like the first name but not the last name, click on the the first name to hold it.  Click "generate" and it will only generate a new last name.  To release it, just click the first name again.  This works with both the first and last names.
 
 
-[https://simple-name-gen.herokuapp.com/](https://simple-name-gen.herokuapp.com/)
+Check it out [here](http://simple-name-generator.s3-website-us-east-1.amazonaws.com/)
 
 
 2/11/16
