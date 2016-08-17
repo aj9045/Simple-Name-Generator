@@ -6,7 +6,7 @@ Using ReactJS tutorial base to create a simple name generator using preselected 
 
 then
 
-`node server.js`
+`npm start`
 
 
 Why?  Because stories always need characters.
