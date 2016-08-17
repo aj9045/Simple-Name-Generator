@@ -1,6 +1,6 @@
 ### Simple Name Generator
 
-Using ReactJS tutorial base to create a simple name generator using preselected names, both first and last, from two CSV files.
+Used ReactJS to create a simple name generator using preselected names, both first and last, from two CSV files.
 
 `npm install`
 
